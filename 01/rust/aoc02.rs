@@ -40,11 +40,14 @@ fn main() {
 
     // sum
     // https://doc.rust-lang.org/core/iter/trait.Iterator.html#method.fold
-    let total = elf_totals[0..3].iter().fold(0, |acc, x| acc + x);
-
+    //let total = elf_totals[0..3].iter().fold(0, |acc, x| acc + x);
+    //
     // fn fold<B, F>(self, init: B, f: F) -> B
     // > Folds every element into an accumulator by applying an operation, returning the final
     // > result.
+
+    // a simpler sum approach (thanks, Jonathan!)
+    let total:u32 = elf_totals[0..3].iter().sum();
 
     // print max cals
     println!("Total calories for top 3 elves: {}", total);
