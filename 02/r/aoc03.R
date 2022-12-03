@@ -1,5 +1,5 @@
 #
-# Advent of Code 2022 Challenge #1
+# Advent of Code 2022 Challenge #3
 #
 
 # function to compute the score for a single round
