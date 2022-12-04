@@ -1,3 +1,6 @@
+//
+// AOC01b
+//
 use std::fs;
 
 fn main() {

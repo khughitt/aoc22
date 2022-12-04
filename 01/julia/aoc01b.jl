@@ -1,5 +1,5 @@
 #
-# Advent of Code 2022 Challenge #1
+# AOC01b
 #
 fp = open("../input")
 
@@ -10,6 +10,8 @@ contents = read(fp, String)
 
 elves = split(contents, "\n\n")
 
+elf_totals = Int[]
+
 for elf in elves
     counter = 0
 
@@ -17,11 +19,12 @@ for elf in elves
         counter = counter + parse(Int64, cal_str)
     end
 
-    if counter > max_cals
-        global max_cals = counter
-    end
+    push!(elf_totals, counter) 
 end
 
 close(fp)
 
-println("Elf with the most snacks: " * string(max_cals))
+# sort totals and sum top 3
+total = sum(sort(elf_totals, rev=true)[1:3])
+
+println("Total calories for top 3 elves: " * string(total))

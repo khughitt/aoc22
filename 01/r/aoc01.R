@@ -1,5 +1,5 @@
 #
-# Advent of Code 2022 Challenge #1
+# AOC01a/b
 #
 txt <- readr::read_file('../input')
 

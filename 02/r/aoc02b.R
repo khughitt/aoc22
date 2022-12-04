@@ -1,5 +1,5 @@
 #
-# Advent of Code 2022 Challenge #4
+# AOC02b
 #
 
 # function to compute the score for a single round

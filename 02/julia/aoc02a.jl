@@ -1,5 +1,5 @@
 #
-# Advent of Code 2022 Challenge Day 2
+# AOC02a
 #
 fp = open("../input", "r")
 
