@@ -7,7 +7,7 @@ mutable struct PathNode
     const name::String
     const parent::String
     const is_dir::Bool
-    size::Int  # for directories, size is set to "0"
+    size::Int
     children::Vector{PathNode}
 end
 
